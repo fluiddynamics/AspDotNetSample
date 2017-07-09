@@ -49,11 +49,11 @@ namespace AspDotNetSample
             // パスワードの検証ロジックを設定します
             manager.PasswordValidator = new PasswordValidator
             {
-                RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                RequiredLength = 1,
+                RequireNonLetterOrDigit = false,
+                RequireDigit = false,
+                RequireLowercase = false,
+                RequireUppercase = false,
             };
 
             // 2 要素認証プロバイダーを登録します。このアプリケーションでは、電話とメールをユーザー確認用コード受け取りのステップとして使用します
